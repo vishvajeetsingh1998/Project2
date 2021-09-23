@@ -1,0 +1,54 @@
+<app-nav1></app-nav1>
+
+
+
+<div class="jumbotron">
+    <h2><b>Edit Product Here</b> </h2>
+    <hr> 
+    <div class="container">
+     
+      <div class="row">
+       <div class="col-md-6">
+         
+        
+         <form class="register" #myForm="ngForm" (ngSubmit)="saveData()">
+           <div class="form-group">
+             <label>Product Id:</label>
+             <input  type="number" class="form-control" name="productid" placeholder="" [(ngModel)]="prod.productid" required>
+             </div>
+             <br>
+             <br>
+             <div class="form-group">
+              <label>Product Name:</label>
+              <input #email="ngModel" type="text" class="form-control" name="productname" placeholder=""[(ngModel)]="prod.productname" required>
+              </div>
+              <br>
+              <br>
+              <div class="form-group">
+                <label>Product Price:</label>
+                <input type="number" class="form-control" name="productprice"  placeholder=""[(ngModel)]="prod.productprice" required >
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                  <label>Product Description:</label>
+                  <input #password="ngModel" type="text" class="form-control" name=" productdescription" placeholder="" [(ngModel)]="prod.productdescription" required minlength="6">
+                  </div>
+                  
+                  <br>
+                  <div class="form-group">
+                    <label>Product ImgUrl:</label>
+                    <input #phoneno="ngModel" type="text" class="form-control"name="productimgurl"  placeholder="" [(ngModel)]="prod.productimgurl" required  minlength="10">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <button class="btn btn-primary" type="submit" >Save Product</button> &nbsp;
+                     
+                      </div>
+                      
+                      
+           </form>
+       </div>
+      </div>
+    </div>
+  </div>

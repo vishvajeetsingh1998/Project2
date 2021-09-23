@@ -1,0 +1,38 @@
+<div><app-navbar1>
+</app-navbar1></div>
+
+
+
+<div class="jumbotron">
+    <h3><b> Admin Login</b></h3>
+      <hr>
+    <div class="container"> 
+      
+      <div class="row">
+       <div class="col-md-6">
+         
+         <form  #login ="ngForm" (ngSubmit)="Adminlogin()" class="login">
+
+             <div class="form-group">
+              <label>Username:</label>
+              <input type="text"  name="username" class="form-control" placeholder="Enter your username" [(ngModel)]="adminid">
+              </div>
+              <br>
+                <div class="form-group">
+                  <label>Password:</label>
+                  <input type="password"  name="password" class="form-control" placeholder="Enter your password" [(ngModel)]="pass">
+                  </div>
+                  
+                  <br>
+                    <div style="text-align: center;"class="form-group">
+                      <button  id="shiv"class="btn btn-primary" type="submit">Sign In</button> &nbsp;
+                     
+                      </div>
+                      
+           </form>
+          
+       </div>
+      </div>
+    </div>
+  </div>
+  

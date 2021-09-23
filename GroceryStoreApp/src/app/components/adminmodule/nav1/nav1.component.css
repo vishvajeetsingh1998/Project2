@@ -1,0 +1,15 @@
+input
+{
+    width: 1000px;
+}
+#shiv
+{
+    background-color:rgb(2, 12, 15);
+}
+body
+{
+    margin-top:0px;
+}
+mat-toolbar{
+    background-color: black;
+}
